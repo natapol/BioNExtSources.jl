@@ -1,6 +1,8 @@
 # BioNExtSources.jl
 
-Populate BioNExt knowledge graphs from the major biological databases.
+[![CI](https://github.com/natapol/BioNExtSources.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/natapol/BioNExtSources.jl/actions/workflows/CI.yml)
+
+Populate [BioNExt](https://github.com/natapol/BioNExt.jl) knowledge graphs from the major biological databases.
 Every reader returns an ordinary `KnowledgeGraph` that follows the BioNExt ontology and
 passes `validate`, and `populate!` merges graphs from several databases into one network,
 recognising the same molecule under different identifiers.
@@ -23,17 +25,22 @@ validate(kg)          # -> Issue[]
 
 ## Installation
 
-BioNExtSources depends on BioNExt, which is in a separate repository and not yet registered.
-Make BioNExt available first, then this package:
+Julia 1.10 or newer. Neither package is registered yet, so add both from GitHub, BioNExt first:
 
 ```julia
 using Pkg
-Pkg.develop(path = "path/to/BioNExt")          # a local clone of BioNExt
-Pkg.develop(path = "path/to/BioNExtSources")
+Pkg.add(url = "https://github.com/natapol/BioNExt.jl")
+Pkg.add(url = "https://github.com/natapol/BioNExtSources.jl")
 ```
 
-With a clone of each repository side by side, `julia --project=.` in this folder also works after
-`Pkg.develop(path = "../BioNExt")`.
+To work on both packages, clone them side by side and develop BioNExt into this one:
+
+```sh
+git clone https://github.com/natapol/BioNExt.jl
+git clone https://github.com/natapol/BioNExtSources.jl
+cd BioNExtSources.jl
+julia --project=. -e 'using Pkg; Pkg.develop(path = "../BioNExt.jl")'
+```
 
 ## Databases
 

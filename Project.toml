@@ -12,10 +12,17 @@ EzXML = "8f5d6c58-4d21-5cfd-889c-e3ad7ee6a615"
 ZipFile = "a5390f91-8eb1-5f08-bee0-b1d1ffed6cea"
 
 [compat]
+BioNExt = "0.1"
 CodecZlib = "0.7"
+Dates = "1"
+Downloads = "1"
 EzXML = "1"
+Test = "1"
 ZipFile = "0.10"
 julia = "1.10"
+
+[sources]
+BioNExt = {url = "https://github.com/natapol/BioNExt.jl"}
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
