@@ -1,0 +1,24 @@
+name = "BioNExtSources"
+uuid = "5e0f1c3a-8a4b-4d52-9c7e-2b1f6d9a3e71"
+authors = ["Natapol Pornputtapong <natapol.p@chula.ac.th>"]
+version = "0.1.0"
+
+[deps]
+BioNExt = "c545543a-02c4-4096-84a3-0780c01847b5"
+CodecZlib = "944b1d66-785c-5afd-91f1-9de20f533193"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+Downloads = "f43a241f-c20a-4ad4-852c-f6b1247861c6"
+EzXML = "8f5d6c58-4d21-5cfd-889c-e3ad7ee6a615"
+ZipFile = "a5390f91-8eb1-5f08-bee0-b1d1ffed6cea"
+
+[compat]
+CodecZlib = "0.7"
+EzXML = "1"
+ZipFile = "0.10"
+julia = "1.10"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

@@ -1,0 +1,5 @@
+hsa:7157	up:P04637
+hsa:7157	up:K7PPA8
+hsa:7157	up:Q53GA5
+hsa:4193	up:Q00987
+hsa:1026	up:P38936

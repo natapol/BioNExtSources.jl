@@ -1,0 +1,7 @@
+ENTITYA	TYPEA	IDA	DATABASEA	ENTITYB	TYPEB	IDB	DATABASEB	EFFECT	MECHANISM	RESIDUE	SEQUENCE	TAX_ID	CELL_DATA	TISSUE_DATA	MODULATOR_COMPLEX	TARGET_COMPLEX	MODIFICATIONA	MODASEQ	MODIFICATIONB	MODBSEQ	PMID	DIRECT	NOTES	ANNOTATOR	SENTENCE	SIGNOR_ID	SCORE
+ATM	protein	Q13315	UNIPROT	TP53	protein	P04637	UNIPROT	up-regulates activity	phosphorylation	Ser15	LLDDLMLSPDDIEQW	9606									9733515	t				SIGNOR-TEST-1	0.9
+MDM2	protein	Q00987	UNIPROT	TP53	protein	P04637	UNIPROT	down-regulates quantity by destabilization	ubiquitination			9606									9153395	t				SIGNOR-TEST-2	0.95
+TP53	protein	P04637	UNIPROT	MDM2	protein	Q00987	UNIPROT	up-regulates quantity by expression	transcriptional regulation			9606									8319905	f				SIGNOR-TEST-3	0.8
+Nutlin-3	chemical	CHEBI:46742	ChEBI	MDM2	protein	Q00987	UNIPROT	down-regulates activity	chemical inhibition			-1									14704432	t				SIGNOR-TEST-4	0.7
+MRN complex	complex	SIGNOR-C1	SIGNOR	ATM	protein	Q13315	UNIPROT	up-regulates activity	binding			9606									15064416	t				SIGNOR-TEST-5	0.6
+DNA damage	stimulus	SIGNOR-ST1	SIGNOR	ATM	protein	Q13315	UNIPROT	up-regulates activity				9606									15064416	f				SIGNOR-TEST-6	0.5
