@@ -33,12 +33,5 @@ jobs:
         with:
           version: ${{ matrix.version }}
       - uses: julia-actions/cache@v2
-      # BioNExt is not registered yet. Julia 1.11 and later read [sources] in Project.toml;
-      # Julia 1.10 ignores it, so add BioNExt from GitHub first.
-      - name: Add BioNExt
-        shell: julia --color=yes --project=. {0}
-        run: |
-          using Pkg
-          Pkg.add(url = "https://github.com/natapol/BioNExt.jl")
       - uses: julia-actions/julia-buildpkg@v1
       - uses: julia-actions/julia-runtest@v1

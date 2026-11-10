@@ -25,12 +25,12 @@ validate(kg)          # -> Issue[]
 
 ## Installation
 
-Julia 1.10 or newer. Neither package is registered yet, so add both from GitHub, BioNExt first:
+Julia 1.10 or newer. BioNExt is registered in Julia's General registry; BioNExtSources isn't
+registered yet, so add it from GitHub:
 
 ```julia
 using Pkg
-Pkg.add(url = "https://github.com/natapol/BioNExt.jl")
-Pkg.add(url = "https://github.com/natapol/BioNExtSources.jl")
+Pkg.add(url = "https://github.com/natapol/BioNExtSources.jl")   # also installs BioNExt
 ```
 
 To work on both packages, clone them side by side and develop BioNExt into this one:
